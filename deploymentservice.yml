@@ -19,7 +19,7 @@ spec:
         image: srimankiwi/nodeapp:latest
         ports:
         - containerPort: 3000
-        
+          hostPort: 31110
         
 ---
 
