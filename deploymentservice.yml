@@ -19,8 +19,8 @@ spec:
       - name: nodeserver2
         image: srimankiwi/nodeapp:latest
         ports:
-        - containerPort: 3000
-          hostPort: 31110
+        - containerPort: 4000
+          hostPort: 31111
         
 ---
 
@@ -34,6 +34,6 @@ spec:
   type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 5000
-    targetPort: 3000
-    nodePort: 31110
+    port: 6000
+    targetPort: 4000
+    nodePort: 31111
